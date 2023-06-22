@@ -285,7 +285,7 @@ footer {
     display: block;
   }
   nav .nav-links {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(7px);
     position: absolute;
     top: 0;
@@ -354,6 +354,9 @@ footer {
   form {
     width: 80vw;
   }
+  .slide-bar::after {
+    box-shadow: inset 30px 20px 180px #000000, inset -30px -20px 180px #000000;
+  }
 }
 @media (max-width: 500px) {
   .card {
@@ -363,5 +366,11 @@ footer {
 @media (max-width: 414px) {
   .slide-bar-top h2 {
     font-size: 22px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  form input {
+    margin-bottom: 10px;
   }
 }
